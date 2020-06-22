@@ -7,26 +7,26 @@ An automated trading model for the equity markets.
 This project was created to develop an automated trading model for the equity markets.  A few strategies were tested.  Expanding on the original scope, a predictive model was developed to predict whether a trade would be profitable or not, based on entry indicators/metrics.
 
 ### Methods Used
-Data Scraping
-Object Oriented Programming
-Machine Learning
-Predictive Modeling
+* Data Scraping
+* Object Oriented Programming
+* Machine Learning
+* Predictive Modeling
 
 ### Technologies
-Python
-Yahoo Finance
+* Python
+* Yahoo Finance
 
 ### Requirements/Imports
-Python 3.8.1
-Pandas
-Pandas Datareader
-Numpy
-Backtrader
-Scikit Learn
-Requests
-Yahoo Finance
-Pickle
-Matplotlib
+* Python 3.8.1
+* Pandas
+* Pandas Datareader
+* Numpy
+* Backtrader
+* Scikit Learn
+* Requests
+* Yahoo Finance
+* Pickle
+* Matplotlib
 
 ## Project Description
 ****1. Strategy Build:****  Wanted to have the strategy trade in time frames of less than a month.  Built around mean reversion, using a combination of indicators.
