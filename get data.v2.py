@@ -5,24 +5,16 @@ import yfinance as yf
 yf.pdr_override()
 import pandas as pd
 import os
-SUPP_PATH = os.path.join("C:\\"
-                      ,"Users"
-                      ,"joepo"
-                      ,"Desktop"
-                      ,"Back Testing"
-                      ,"Supplemental"
-                        )
+
+DIRECT = os.getcwd()
+
+SUPP_PATH = os.path.join(DIRECT, "Supplemental")
 import sys
 sys.path.insert(1, SUPP_PATH)
 import rando
 
-DATAPATH = os.path.join("C:\\"
-                        ,"Users"
-                        ,"joepo"
-                        ,"Desktop"
-                        ,"Back Testing"
-                        ,"Data"
-                        )
+DATAPATH = os.path.join(DIRECT, "Data")
+
 #get tickers
 tList = []
 tickers = rando.allTickers(os.path.join(DATAPATH, 'Favs'))

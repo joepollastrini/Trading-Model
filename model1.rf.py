@@ -1,11 +1,6 @@
 import os
-SUPP_PATH = os.path.join("C:\\"
-                      ,"Users"
-                      ,"joepo"
-                      ,"Desktop"
-                      ,"Back Testing"
-                      ,"Supplemental"
-                        )
+DIRECT = os.getcwd()
+SUPP_PATH = os.path.join(DIRECT, "Supplemental")
 import sys
 sys.path.insert(1, SUPP_PATH)
 import backtrader as bt
@@ -19,15 +14,9 @@ import pickle
 import pandas as pd
 from sklearn.ensemble import RandomForestClassifier
 
+
 ## VARIABLES ##
-DATAPATH = os.path.join("C:\\"
-                    ,"Users"
-                    ,"joepo"
-                    ,"Desktop"
-                    ,"Back Testing"
-                    ,"Data"
-                    ,"Live"
-                        )
+DATAPATH = os.path.join(DIRECT, "Data", "Live")
 TICKERLIST = rando.allTickers(DATAPATH)
 DATEDICT = {'d':'%Y-%m-%d'}
 ITERATOR = 'd'
